@@ -1,4 +1,7 @@
 @media screen and (min-width: 800px) {
+  .navbar {
+    padding: 0 15%;
+  }
   .navbar .navbar-content {
     background-color: transparent !important;
     width: 100% !important;
@@ -216,7 +219,16 @@
   header .header-text {
     font-size: 1.5rem;
   }
-  main .design-container .design-content {
+  .design-container {
+    margin-bottom: 6rem;
+  }
+  .design-container .design-title {
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5rem;
+  }
+  .design-container .design-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -224,23 +236,119 @@
     padding: 0;
     padding-left: 10rem;
   }
-  main .design-container .design-content .design-image {
+  .design-container .design-content .design-image {
     background-image: url("../assets/illustration-editor-desktop.svg");
     background-size: contain;
     background-attachment: local;
     background-position: right center;
     height: 100vh;
   }
-  main .design-container .design-content .design-texts {
+  .design-container .design-content .design-texts {
     text-align: start;
     padding-right: 5rem;
   }
-  main .design-container .design-content .design-texts .text {
+  .design-container .design-content .design-texts .text {
     max-width: 500px;
     font-size: 1.2rem;
+    font-family: 'Overpass', sans-serif;
   }
-  main .design-container .design-content .design-texts .text strong {
+  .design-container .design-content .design-texts .text strong {
     font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .infrastructure-container {
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 8rem;
+  }
+  .infrastructure-container .infrastructure-bg1 {
+    max-width: 600px;
+    height: 100%;
+    margin: 0;
+  }
+  .infrastructure-container .infrastructure-bg1::before {
+    width: 100%;
+    height: 300px;
+    top: 0%;
+    margin-top: 20px;
+  }
+  .infrastructure-container .infrastructure-bg2 {
+    height: 100%;
+    overflow: none;
+  }
+  .infrastructure-container .infrastructure-bg2::before {
+    width: 100%;
+    height: 450px;
+    top: -50%;
+  }
+  .infrastructure-container .infrastructure-texts {
+    max-width: 800px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: start;
+    padding: 5%;
+  }
+  .opensource-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 5rem 0 0;
+  }
+  .opensource-container .opensource-image {
+    background-image: url("../assets/illustration-laptop-desktop.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+    width: 120%;
+    height: 500px;
+    margin-right: 2rem;
+  }
+  .opensource-container .opensource-texts {
+    text-align: start;
+    padding-right: 4rem;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 350px;
+    padding: 5rem 3rem;
+  }
+  footer .logo-container {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .logo-container .footer-logo {
+    max-width: 100px;
+    width: 60%;
   }
 }
 

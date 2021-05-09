@@ -464,9 +464,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 5rem;
 }
 
-main .design-container {
+.design-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,10 +482,10 @@ main .design-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
-main .design-container .design-title {
+.design-container .design-title {
   width: 100%;
   color: var(--headings);
   font-size: 1.6rem;
@@ -502,7 +503,7 @@ main .design-container .design-title {
   margin-bottom: 2rem;
 }
 
-main .design-container .design-content {
+.design-container .design-content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,7 +521,7 @@ main .design-container .design-content {
   padding: 0 3rem;
 }
 
-main .design-container .design-content .design-image {
+.design-container .design-content .design-image {
   background-image: url("../assets/illustration-editor-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -531,7 +532,7 @@ main .design-container .design-content .design-image {
   margin-bottom: 1rem;
 }
 
-main .design-container .design-content .design-texts {
+.design-container .design-content .design-texts {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,19 +548,282 @@ main .design-container .design-content .design-texts {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: 'Overpass', sans-serif;
 }
 
-main .design-container .design-content .design-texts .text {
+.design-container .design-content .design-texts .text {
   color: var(--body-copy);
   font-size: 1.3rem;
   line-height: 2rem;
   margin-bottom: 2.5rem;
 }
 
-main .design-container .design-content .design-texts .text strong {
+.design-container .design-content .design-texts .text strong {
   color: var(--headings);
   font-size: 2rem;
   margin-bottom: 56rem;
+}
+
+.infrastructure-container {
+  background-color: var(--background-gradient-blue);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+  padding: 0 0 1rem;
+  border-radius: 0 60px 0 60px;
+  z-index: -2;
+}
+
+.infrastructure-container .infrastructure-bg1 {
+  width: 100%;
+  height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: none;
+}
+
+.infrastructure-container .infrastructure-bg1::before {
+  content: '';
+  max-width: 300px;
+  width: 100%;
+  height: 350px;
+  background-image: url("../assets/illustration-phones.svg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -40%;
+}
+
+.infrastructure-container .infrastructure-bg2 {
+  max-width: 800px;
+  width: 100%;
+  height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.infrastructure-container .infrastructure-bg2::before {
+  content: '';
+  background-image: url("../assets/bg-pattern-circles.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  bottom: -25%;
+  z-index: -1;
+}
+
+.infrastructure-container .infrastructure-texts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  padding: 0 10% 5rem;
+}
+
+.infrastructure-container .infrastructure-texts .title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.infrastructure-container .infrastructure-texts .text {
+  font-size: 1.15rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.04rem;
+}
+
+.opensource-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 3rem;
+  margin-bottom: 5rem;
+}
+
+.opensource-container .opensource-image {
+  background-image: url("../assets/illustration-laptop-mobile.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  width: 120%;
+  height: 300px;
+}
+
+.opensource-container .opensource-texts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+.opensource-container .opensource-texts .text {
+  width: 100%;
+  color: var(--body-copy);
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.opensource-container .opensource-texts .text strong {
+  color: var(--headings);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+footer {
+  background-color: var(--footer-background);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 2rem 1rem;
+  border-top-right-radius: 50px;
+}
+
+footer .logo-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+footer .logo-container .footer-logo {
+  max-width: 100px;
+  width: 60%;
+}
+
+footer .footer-paths {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 3rem;
+}
+
+footer .footer-paths .path-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1.2rem;
+}
+
+footer .footer-paths .path {
+  color: var(--footer-text);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  line-height: 1.9rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+footer .footer-paths .path:hover {
+  opacity: 80%;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
